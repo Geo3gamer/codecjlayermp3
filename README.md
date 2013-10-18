@@ -1,28 +1,36 @@
 CodecJLayerMP3
 ==============
+MP3 codec library for Paulscode's 3D Sound System. It is based on parts of the JLayer (MPEG decoder), MP3SPI, and Tritonus libraries.
 
-A mp3 codec library for Paulcode's 3D Sound System.
-It based on parts of JLayer (mpeg decoder library), MP3SPI and Tritonus library.
+## Using it
+If you use a IDE, add the codec plugin to your build path.
 
-How to deploy:
+For use in your source, add the following to your imports:
 
-Use the ANT build script build.xml.
-Default build target is: main 
+    import de.cuina.fireandfuel.CodecJLayerMP3;
 
-How to use it:
+Add the below to your codecs setup of your class where PaulsCode is used:
 
-If you use a IDE: Add the codec plugin to your build path.
-Add the line
+    SoundSystemConfig.setCodec("mp3", CodecJLayerMP3.class);
 
-  import de.cuina.fireandfuel.CodecJLayerMP3;
+## The license
+CodecJLayerMP3 is licensed under the [GNU Lesser General Public License Version 3][License].
 
-to your the imports and
+## Getting the source
+The latest and greatest source can be found here on [GitHub][Source].
 
-  SoundSystemConfig.setCodec("mp3", CodecJLayerMP3.class);
+If you are using Git, use this command to clone the project:
 
-to the codecs setup at your class where Paul's Sound System is used.
+    git clone git://github.com/Legacy/CodecJLayerMP3.git
 
-Please use the Paulscode's forum for advices, critique, etc. 
-http://www.paulscode.com/forum/index.php?topic=496.0
+Or download the [latest zip archive][Source Download].
 
-License: LGPLv3
+## Compiling the source
+This project uses Maven to handle its dependencies.
+
+* Install [Maven 2 or 3](http://maven.apache.org/download.html)  
+* Checkout this repo and run: `mvn clean package`
+
+[License]: http://www.gnu.org/licenses/lgpl.html
+[Source]: https://github.com/Legacy/CodecJLayerMP3
+[Source Download]: https://github.com/Legacy/CodecJLayerMP3/archive/master.zip

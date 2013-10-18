@@ -16,31 +16,22 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *----------------------------------------------------------------------
  */
-
 package javazoom.jl.decoder;
 
 /**
- * Work in progress.
- * 
+ * TODO: Work in progress.
+ *
  * Manages a number of controls.
  */
-public class Manager //implements Control
-{
-	public void addControl(Control c)
-	{
-		
+public class Manager /* implements Control */ {
+	public void addControl(Control c) {
 	}
-	
-	public void removeControl(Control c)
-	{
-		
+
+	public void removeControl(Control c) {
 	}
-	
-	public void removeAll()
-	{
-		
+
+	public void removeAll() {
 	}
-	
-	// control interface delegates to a managed control
-	
+
+	// Control interface delegates to a managed control.
 }

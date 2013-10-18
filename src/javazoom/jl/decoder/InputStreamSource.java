@@ -17,64 +17,51 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *----------------------------------------------------------------------
  */
-
 package javazoom.jl.decoder;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * <i>Work In Progress.</i>
- * 
- * An instance of <code>InputStreamSource</code> implements a
- * <code>Source</code> that provides data from an <code>InputStream
- * </code>. Seeking functionality is not supported. 
- * 
- * @author MDM
+ * TODO: Work in progress.
+ *
+ * An instance of <code>InputStreamSource</code> implements a <code>Source</code> that provides data from an <code>InputStream </code>. Seeking functionality is not supported.
  */
-public class InputStreamSource implements Source
-{
-	private final InputStream		in;
-	
-	public InputStreamSource(InputStream in)
-	{
-		if (in==null)
+public class InputStreamSource implements Source {
+	private final InputStream in;
+
+	public InputStreamSource(InputStream in) {
+		if (in == null) {
 			throw new NullPointerException("in");
-		
-		this.in = in;		
+		}
+
+		this.in = in;
 	}
-	
-	public int read(byte[] b, int offs, int len)
-		throws IOException
-	{
+
+	public int read(byte[] b, int offs, int len) throws IOException {
 		int read = in.read(b, offs, len);
 		return read;
 	}
-	
-	public boolean willReadBlock()
-	{
+
+	public boolean willReadBlock() {
 		return true;
 		//boolean block = (in.available()==0);
 		//return block;
 	}
-	
-	public boolean isSeekable()
-	{
-		return false;	
+
+	public boolean isSeekable() {
+		return false;
 	}
-	
-	public long	tell()
-	{
-		return -1;	
+
+	public long tell() {
+		return -1;
 	}
-	
-	public long	seek(long to)
-	{
-		return -1;	
+
+	public long seek(long to) {
+		return -1;
 	}
-	
-	public long length()
-	{
+
+	public long length() {
 		return -1;
 	}
 }
