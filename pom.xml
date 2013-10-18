@@ -52,15 +52,15 @@
 
 	<!-- Source code access -->
 	<scm>
-		<connection>scm:git:git://github.com/Legacy/CodecJLayerMP3.git</connection>
-		<developerConnection>scm:git:git@github.com:Legacy/CodecJLayerMP3.git</developerConnection>
-		<url>https://github.com/Legacy/CodecJLayerMP3</url>
+		<connection>scm:git:git://github.com/Spoutcraft/CodecJLayerMP3.git</connection>
+		<developerConnection>scm:git:git@github.com:Spoutcraft/CodecJLayerMP3.git</developerConnection>
+		<url>https://github.com/Spoutcraft/CodecJLayerMP3</url>
 	</scm>
 
 	<!-- Continuous integration -->
 	<ciManagement>
 		<system>travis</system>
-		<url>https://travis-ci.org/Legacy/CodecJLayerMP3</url>
+		<url>https://travis-ci.org/Spoutcraft/CodecJLayerMP3</url>
 	</ciManagement>
 
 	<!-- Issue management -->
@@ -105,9 +105,9 @@
 	<dependencies>
 		<!-- Include in final JAR -->
 		<dependency>
-			<groupId>org.spoutcraft</groupId>
-			<artifactId>lwjgl-openal</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<groupId>org.lwjgl.lwjgl</groupId>
+			<artifactId>lwjgl</artifactId>
+			<version>2.9.0</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
