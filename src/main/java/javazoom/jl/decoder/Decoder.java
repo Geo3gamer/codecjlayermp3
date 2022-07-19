@@ -65,7 +65,7 @@ public class Decoder implements DecoderErrors {
 	/**
 	 * Creates a new <code>Decoder</code> instance with default parameters.
 	 *
-	 * @param params The <code>Params</code> instance that describes the customizable aspects of the decoder.
+	 * @param params0 The <code>Params</code> instance that describes the customizable aspects of the decoder.
 	 */
 	public Decoder(Params params0) {
 		if (params0 == null) {
@@ -106,7 +106,7 @@ public class Decoder implements DecoderErrors {
 	 * Decodes one frame from an MPEG audio bitstream.
 	 *
 	 * @param header The header describing the frame to decode.
-	 * @param bitstream The bitstream that provides the bits for te body of the frame.
+	 * @param stream The bitstream that provides the bits for te body of the frame.
 	 * @return A SampleBuffer containing the decoded samples.
 	 */
 	public Obuffer decodeFrame(Header header, Bitstream stream) throws DecoderException {
@@ -137,7 +137,7 @@ public class Decoder implements DecoderErrors {
 	/**
 	 * Retrieves the sample frequency of the PCM samples output by this decoder. This typically corresponds to the sample rate encoded in the MPEG audio stream.
 	 *
-	 * @param the sample rate (in Hz) of the samples written to the output buffer when decoding.
+	 * param the sample rate (in Hz) of the samples written to the output buffer when decoding.
 	 */
 	public int getOutputFrequency() {
 		return outputFrequency;
