@@ -72,16 +72,8 @@
 	<!-- Dependency repositories -->
 	<repositories>
 		<repository>
-			<id>sonatype-nexus-releases</id>
-			<url>https://oss.sonatype.org/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 
@@ -111,9 +103,9 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.spoutcraft</groupId>
-			<artifactId>soundsystem</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<groupId>com.github.NullNoname</groupId>
+			<artifactId>Paulscode-SoundSystem</artifactId>
+			<version>2013.04.17-unofficial</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
@@ -130,8 +122,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<compilerArguments>
 						<O>-Xlint:all</O>
 						<O>-Xlint:-path</O>
